@@ -1,140 +1,31 @@
 
 body {
-  font-family: 'Helvetica', sans-serif;
-  background-color: #fdfcf9;
-  color: #2c3e50;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
 }
-
 header {
-  background-color: #f4f4f4;
-  padding: 40px 20px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f1f1f1;
 }
-
-header h1 {
-  margin: 0;
-  font-size: 2em;
-  letter-spacing: 1px;
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
 }
-
-header p {
-  font-style: italic;
-  color: #555;
-}
-
-nav {
-  background-color: #fdfcf9;
-  padding: 10px 0;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-}
-
 nav a {
-  display: inline-block;
-  margin: 0 15px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
 }
-
 nav a:hover {
-  color: #007B8E;
+    color: #000000;
 }
-
-main {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 0 15px;
-  line-height: 1.6;
-}
-
-h2 {
-  color: #007B8E;
-  margin-top: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 8px;
-}
-
-/* Mobile adjustments */
-@media screen and (max-width: 600px) {
-  header h1 {
-    font-size: 1.6em;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 8px 10px;
-    font-size: 16px;
-  }
-
-  main {
-    padding: 0 10px;
-  }
-
-  h2 {
-    font-size: 1.4em;
-  }
-
-  body {
-    font-size: 16px;
-  }
-}
-
-
-/* Highlight the current page */
-nav a.active {
-  color: #007B8E;
-  border-bottom: 2px solid #007B8E;
-}
-
-/* Add slight scroll if nav overflows on mobile */
-nav {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-/* Smooth underline transition */
-nav a {
-  transition: border-bottom 0.3s ease;
-}
-
-
-/* Sticky nav bar */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background-color: #fdfcf9;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-/* Back to top button */
-#backToTop {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background-color: #007B8E;
-  color: #fff;
-  padding: 10px 14px;
-  border: none;
-  border-radius: 50%;
-  font-size: 18px;
-  display: none;
-  cursor: pointer;
-  z-index: 999;
-}
-
-#backToTop:hover {
-  background-color: #005f6e;
+.hero {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
 }

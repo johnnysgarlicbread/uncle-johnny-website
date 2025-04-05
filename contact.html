@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Uncle Johnny’s Garlic Bread | Festival Vendor Info</title>
@@ -29,5 +30,12 @@
       <p>We’re happy to provide setup details, insurance documentation, and references from previous festivals.</p>
     </section>
   </main>
+
+  <button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&#8679;</button>
+  <script>
+    window.onscroll = function() {
+      document.getElementById("backToTop").style.display = window.scrollY > 300 ? "block" : "none";
+    };
+  </script>
 </body>
 </html>

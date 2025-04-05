@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Garlic Bread on a Stick | Uncle Johnny’s Festival Menu</title>
@@ -28,5 +29,12 @@
       <p>No prep lines. No soggy trays. Just fast, fresh, festival-ready flavor.</p>
     </section>
   </main>
+
+  <button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&#8679;</button>
+  <script>
+    window.onscroll = function() {
+      document.getElementById("backToTop").style.display = window.scrollY > 300 ? "block" : "none";
+    };
+  </script>
 </body>
 </html>

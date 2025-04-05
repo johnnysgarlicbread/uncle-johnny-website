@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="og:title" content="Uncle Johnny’s Garlic Bread | Garlic Bread on a Stick at Festivals">
+  <meta property="og:description" content="The official site for Uncle Johnny’s Garlic Bread—home of the grilled garlic breadstick on a stick. Book us for your next food festival or event.">
+  <meta property="og:image" content="https://johnnysgarlicbread.github.io/logo.png">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="garlic bread, food festival vendor, bread on a stick, garlic bread booth, NY festival food, Uncle Johnny, Arlotta olive oil">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo Gallery | Uncle Johnny’s Garlic Bread</title>
+  <meta name="description" content="Browse photos of Uncle Johnny’s Garlic Bread in action at food festivals. Crowd favorites, behind the scenes, and signature garlic breadsticks on a stick.">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      max-width: 240px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    .lightbox {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="product.html">Our Product</a>
+    <a href="events.html">Past Events</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html" class="active">Gallery</a>
+  </nav>
+  <main>
+    <p style="text-align:center;">A look behind the booth—and the bread.</p>
+    <div class="gallery">
+      <img src="garlic_bread.png" alt="Garlic Bread in Tray" onclick="openLightbox(this.src)">
+      <img src="arlotta_oil.jpeg" alt="Arlotta Garlic Olive Oil" onclick="openLightbox(this.src)">
+      <img src="logo.png" alt="Uncle Johnny's Logo" onclick="openLightbox(this.src)">
+    </div>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="">
+    </div>
+    <script>
+      function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox').style.display = 'flex';
+      }
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+      }
+    </script>
+  </main>
+</body>
+</html>

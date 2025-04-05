@@ -89,3 +89,21 @@ img {
     font-size: 16px;
   }
 }
+
+
+/* Highlight the current page */
+nav a.active {
+  color: #007B8E;
+  border-bottom: 2px solid #007B8E;
+}
+
+/* Add slight scroll if nav overflows on mobile */
+nav {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Smooth underline transition */
+nav a {
+  transition: border-bottom 0.3s ease;
+}

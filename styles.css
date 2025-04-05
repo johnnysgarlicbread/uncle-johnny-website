@@ -33,7 +33,8 @@ nav {
 }
 
 nav a {
-  margin: 0 20px;
+  display: inline-block;
+  margin: 0 15px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -46,12 +47,45 @@ nav a:hover {
 
 main {
   max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 30px auto;
+  padding: 0 15px;
   line-height: 1.6;
 }
 
 h2 {
   color: #007B8E;
   margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  body {
+    font-size: 16px;
+  }
 }
